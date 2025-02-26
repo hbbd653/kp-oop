@@ -1,0 +1,91 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+namespace homework_1_26_02_1
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int mx = 0; // максиммальная последовательность
+            int CN = 0; // длина последовательности 
+            int A = -1; // число с которым сравниваем
+            int N; // число которое мы сравниваем
+
+            do
+            {
+                if (int.TryParse(Console.ReadLine(), out N)) // преобразование строки в число 
+                {
+                    if (A == N)
+                    {
+                        CN++;
+                    }
+                    else
+                    {
+                        if (CN > mx)
+                        {
+                            mx = CN;
+                        }
+                        CN = 1;
+                        A = N;
+                    }
+                }
+            } while (N != 0);
+            Console.WriteLine(mx);
+        }
+    }
+}
+*/
+/*
+namespace hw_1_26_02_2
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int a, i;
+            bool found = false;
+            Console.Write("Введите натуриальное число не меньше двух: ");
+            a = Convert.ToInt32(Console.ReadLine());
+            for (i = 2; i*i <= a; i++)
+            {
+                if (a % i == 0)
+                {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine(a);
+            }
+            else
+            {
+                Console.WriteLine(i);
+            }    
+        }
+    }
+}
+*/
+namespace hw_1_26_02_6
+{
+    class Program
+    {
+        public static bool SM_Main(int x)
+        {
+            int x1 = x / 10;
+            return x1 == 0 || (x % 10 == x1 % 10 && SM_Main(x1)); // && - and, || - or
+        }
+        public static void Main()
+        {
+            int a;
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(SM_Main(a));
+            Console.WriteLine(SM_Main(333));
+        }
+    }
+}
