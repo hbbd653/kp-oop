@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace hw_oop_2
+{
+ 
+    public class RFloat
+    {
+
+        private int num, den;
+
+        public int Num
+        {
+            get { return num; }
+            set { num = value; }
+        }
+
+        public int Den
+        {
+            get { return den; }
+            set
+            {
+                if (value != 0)
+                {
+                    den = value;
+                }
+            }
+        }
+
+        public RFloat(int num = 1, int den = 1)
+        {
+            this.num = num;
+            this.den = den;
+        }
+        public override string ToString()
+        {
+            return $"{this.num}/{this.den}";
+        }
+
+
+        public static RFloat operator *(RFloat op_1, RFloat op_2)
+        {
+            return new RFloat(op_1.Num * op_2.Num, op_1.Den * op_2.Den);
+        }
+
+        public static RFloat operator /(RFloat op_1, RFloat op_2)
+        {
+            return new RFloat();
+        }
+
+        public static RFloat operator -(RFloat op_1, RFloat op_2)
+        {
+            return new RFloat();
+        }
+
+        public static RFloat operator +(RFloat op_1, RFloat op_2)
+        {
+            return new RFloat();
+        }
+
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            RFloat a = new RFloat(3, 2);
+            RFloat b = new RFloat(4, 3);
+
+            //RFloat c = a.Mul(b); 
+            RFloat c = a * b;
+
+
+            Console.WriteLine(c);
+        }
+    }
+}
