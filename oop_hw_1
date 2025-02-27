@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace hw_oop_1_2
+{
+    public class QuadraticAnswer
+    {
+        private double X1, X2;
+        public QuadraticAnswer(double x1, double x2)
+        {
+            X1 = x1;
+            X2 = x2;
+        }
+        public double GetX1()
+        {
+            return X1;
+        }
+        public double GetX2()
+        {
+            return X2;
+        }
+    }
+    public class Quadratic
+    {
+        private double A, B, C, X1, X2;
+        public Quadratic()
+        {
+            A = 0;
+            B = 0;
+            C = 0;
+            X1 = 0;
+            X2 = 0;
+        }
+        public enum SolveType { stNone, stOne, stBoth };
+        public void Set(double A, double B, double C)
+        {
+            this.A = A;
+            this.B = B;
+            this.C = C;
+        }
+        public QuadraticAnswer Get()
+        {
+            return new QuadraticAnswer(this.X1, this.X2);
+        }
+        private double Discriminant()
+        {
+            return B * B - 4 * A * C;
+        }
+        public SolveType Solve()
+        {
+            double D = this.Discriminant();
+            if (D < 0)
+            {
+                return SolveType.stNone;
+            }
+            else if (D == 0)
+            {
+                X1 = -B / (2 * A);
+                return SolveType.stOne;
+            }
+            else
+            {
+                X1 = (-B + Math.Sqrt(D)) / (2 * A);
+                X2 = (-B - Math.Sqrt(D)) / (2 * A);
+                return SolveType.stBoth;
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Quadratic equation = new Quadratic();
+            equation.Set(1, 4, 2); // x^2 + 3x + 2 = 0
+            Quadratic.SolveType result = equation.Solve();
+        }
+    }
+}
