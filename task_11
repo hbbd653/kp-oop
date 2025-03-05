@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task_11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // ax = b => x = b / a
+            Console.WriteLine("Введите a");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите b");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a == 0)
+            {
+                if (b == 0)
+                {
+                    Console.WriteLine($"уравнение: {a} * x = {b} - имеет бесконечно много решений, так как a = 0 и b = 0");
+                }
+                else
+                {
+                    Console.WriteLine($"уравнение: {a} * x = {b} - не имеет решений, так как a = 0");
+                }
+            }
+            else
+            {
+                int x = b / a;
+                Console.WriteLine($"Уравнение: {a} * x = {b} -> x = {x}");
+            }
+        }
+    }
+}
