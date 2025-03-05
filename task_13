@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task_13
+{
+    class Program
+    {
+        public static int Ind(int[] ar, int id)
+        {
+            int left = 0;
+            int rigth = ar.Length - 1;
+            while (left <= rigth)
+            {
+                int midle = (left + rigth) / 2;
+                if (ar[midle] == id)
+                {
+                    return midle;
+                }
+                else if (ar[midle] < id)
+                {
+                    left = midle + 1;
+                }
+                else
+                {
+                    rigth = midle - 1;
+                }
+            }
+            return -1;
+        }
+
+        public static void Main(string[] args)
+        {
+            int[] ar = new int[] { 1, 2, 3, 5, 6, 7, 8, 9, 34, 54, 64 };
+            int id = 5;
+            int In = Ind(ar, id);
+            if (In != -1)
+            {
+                Console.WriteLine($"индекс числа {id} == {In}");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+        }
+    }
+}
