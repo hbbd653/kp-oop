@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\bin\Debug\oop_cw_4.exe.config
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\bin\Debug\oop_cw_4.exe
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\bin\Debug\oop_cw_4.pdb
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\obj\Debug\oop_cw_4.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\obj\Debug\oop_cw_4.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\obj\Debug\oop_cw_4.exe
+C:\Users\Admin\Desktop\c#-1012\oop_cw_4\obj\Debug\oop_cw_4.pdb

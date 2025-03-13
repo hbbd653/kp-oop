@@ -1,0 +1,181 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace oop_hw_3
+{
+    class Program
+    {
+        public static int Task_15(int[] ar)
+        {
+            int sum = 0;
+            int count = 0;
+            for (int i = 0; i < ar.Length; i++)
+            {
+                if (ar[i] % 2 == 0 && ar[i] > 0)
+                {
+                    sum += ar[i];
+                    count++;
+                }
+            }
+            if (count > 0)
+            {
+                return sum / count;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        public static void test_Task_15()
+        {
+            int[] ar = { 1, 2, 3, 4, 5 };
+            if (Task_15(ar) == 3)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+            //
+            int[] ar1 = { -1, -2, -3, -4, -5 };
+            if (Task_15(ar1) == 0)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+            //
+            int[] ar2 = { 1, -2, 3, 4, 5, 6 };
+            if (Task_15(ar2) == 5)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+            //
+            int[] ar3 = { -1, -2, -3, 4, -5, -6 };
+            if (Task_15(ar3) == 4)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+            //
+            int[] ar4 = { 1, 2, 32, 55, 77, 8 };
+            if (Task_15(ar4) == 14)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+        }
+
+        public static int Task_16(int value_1, int value_2)
+        {
+            while ((value_1 != 0) && (value_2 != 0))
+            {
+                if (value_1 > value_2)
+                {
+                    value_1 %= value_2;
+                }
+                else
+                {
+                    value_2 %= value_1;
+                }
+            }
+            return Math.Max(value_1, value_2);
+        }
+        public static void test_Task_16()
+        {
+            if (Task_16(320, 120) == 40) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("ne"); }
+            //
+            if (Task_16(12, 18) == 6) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("ne"); }
+            //
+            if (Task_16(35, 49) == 7) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("ne"); }
+            //
+            if (Task_16(231, 546) == 21) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("ne"); }
+            //
+            if (Task_16(72, 27) == 9) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("ne"); }
+            if (Task_16(4, 20) == 4) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("ne"); }
+        }
+
+        public static List<int> Task_18(int n)
+        {
+            List<int> gg = new List<int>();
+            while (n % 2 == 0)
+            {
+                gg.Add(2);
+                n /= 2;
+            }
+            for (int i = 3; i * i <= n; i += 2)
+            {
+                while (n % i == 0)
+                {
+                    gg.Add(i);
+                    n /= i;
+                }
+            }
+            if (n > 1)
+            {
+                gg.Add(n);
+            }
+            return gg;
+        }
+        public static void test_Task_18()
+        {
+            List<int> a = new List<int> { 3, 3, 3 };
+            List<int> b = Task_18(27);
+            if (a.SequenceEqual(b)) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("no"); }
+            //
+            List<int> a1 = new List<int> { 2, 2, 3, 3 };
+            List<int> b1 = Task_18(36);
+            if (a1.SequenceEqual(b1)) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("no"); }
+            //
+            List<int> a2 = new List<int> { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
+            List<int> b2 = Task_18(1024);
+            if (a2.SequenceEqual(b2)) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("no"); }
+            //
+            List<int> a3 = new List<int> { 5, 5, 5 };
+            List<int> b3 = Task_18(125);
+            if (a3.SequenceEqual(b3)) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("no"); }
+            //
+            List<int> a4 = new List<int> { 7 };
+            List<int> b4 = Task_18(7);
+            if (a4.SequenceEqual(b4)) { Console.WriteLine("yes"); }
+            else { Console.WriteLine("no"); }
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Task_15");
+            test_Task_15();
+            Console.WriteLine("Task_16");
+            test_Task_16();
+            Console.WriteLine("Task_18");
+            test_Task_18();
+        }
+    }
+}
