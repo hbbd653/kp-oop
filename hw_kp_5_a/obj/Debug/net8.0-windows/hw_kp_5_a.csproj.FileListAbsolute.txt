@@ -1,0 +1,35 @@
+D:\c# дз+классная\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.exe
+D:\c# дз+классная\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.deps.json
+D:\c# дз+классная\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.runtimeconfig.json
+D:\c# дз+классная\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.dll
+D:\c# дз+классная\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.pdb
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.Form1.resources
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.csproj.GenerateResource.cache
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.GeneratedMSBuildEditorConfig.editorconfig
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.AssemblyInfoInputs.cache
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.AssemblyInfo.cs
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.csproj.CoreCompileInputs.cache
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.dll
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\refint\hw_kp_5_a.dll
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.pdb
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.genruntimeconfig.cache
+D:\c# дз+классная\hw_kp_5_a\obj\Debug\net8.0-windows\ref\hw_kp_5_a.dll
+D:\kp+oop\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.exe
+D:\kp+oop\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.deps.json
+D:\kp+oop\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.runtimeconfig.json
+D:\kp+oop\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.dll
+D:\kp+oop\hw_kp_5_a\bin\Debug\net8.0-windows\hw_kp_5_a.pdb
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.Form1.resources
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.csproj.GenerateResource.cache
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.GeneratedMSBuildEditorConfig.editorconfig
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.AssemblyInfoInputs.cache
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.AssemblyInfo.cs
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.csproj.CoreCompileInputs.cache
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.dll
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\refint\hw_kp_5_a.dll
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.pdb
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.genruntimeconfig.cache
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\ref\hw_kp_5_a.dll
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.Form2.resources
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.Task_30.resources
+D:\kp+oop\hw_kp_5_a\obj\Debug\net8.0-windows\hw_kp_5_a.Task_31.resources
